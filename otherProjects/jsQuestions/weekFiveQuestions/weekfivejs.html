@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <title> Week Five JS Questions</title>
+     <!-- link to custom favicon -->
+    <link rel="icon" href="../../../images/favicon.ico"/>
+
+</head>
+
+<body>
+    <div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#q1" aria-controls="q1" role="tab" data-toggle="tab">Q1</a></li>
+    <li role="presentation"><a href="#q2" aria-controls="q2" role="tab" data-toggle="tab">Q2</a></li>
+    <li role="presentation"><a href="#q3" aria-controls="q3" role="tab" data-toggle="tab">Q3</a></li>
+    <li role="presentation"><a href="#q4" aria-controls="q4" role="tab" data-toggle="tab">Q4</a></li>
+      <li role="presentation"><a href="#q5" aria-controls="q5" role="tab" data-toggle="tab">Q5</a></li>
+      <li role="presentation"><a href="#q6" aria-controls="q6" role="tab" data-toggle="tab">Q6</a></li>
+      <li role="presentation"><a href="#q7" aria-controls="q7" role="tab" data-toggle="tab">Q7</a></li>
+      <li role="presentation"><a href="#q8" aria-controls="q8" role="tab" data-toggle="tab">Q8</a></li>
+      <li role="presentation"><a href="#q9" aria-controls="q9" role="tab" data-toggle="tab">Q9</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+
+
+  <!-- Question 1 Start -->
+    <div role="tabpanel" class="tab-pane active" id="q1">
+      <div class="row">
+          <div class="col-md-12">
+          <pre>
+            Question 1:
+
+                function getTriangle(){
+
+                var str = "";
+
+                for (var i=1; i<=6; i++){
+
+
+                for(var j=1; j<=i;j++){
+
+                    str = str + "#";
+                    }
+                    str = str + "<br>";
+                    }
+
+
+                $("#q1-result").html(str);
+                }
+
+                 $("#q1-button").on("click", function(){
+                    getTriangle();
+
+                    });
+
+          </pre>
+          </div>
+          <div class="col-md-12">
+              <!-- button -->
+            <button id="q1-button" class="btn btn-default" type="button">Q1 Answer</button>
+          </div>
+          <div class="col-md-12">
+              <!-- result -->
+            <div id="q1-result"></div>
+          </div>
+          </div>
+
+        </div>
+
+
+  <!-- Question 2 Start -->
+    <div role="tabpanel" class="tab-pane" id="q2">
+        <div class="row">
+          <div class="col-md-12">
+          <pre>
+          Question 2:
+
+  function printFooBar(){
+      var print = "";
+      var number = Number (1);
+        for (var i = Number(1); i < 100; i++) {
+          // document.write( number + i + "<br>");
+
+        if (i%3==0 && i%5==0){
+                print = print + "FooBar" + "<br>";
+                  }
+
+        else if (i%3==0){
+                print = print + "Foo" + "<br>";
+                }
+
+
+
+        else if (i%5==0){
+            print = print + "Bar" + "<br>";
+            }
+
+        else{
+            print = print + i + "<br>";
+            }
+        }
+          </pre>
+          </div>
+          <div class="col-md-12">
+              <!-- button -->
+            <button id="q2-button" class="btn btn-default" type="button">Q2 Answer</button>
+          </div>
+          <div class="col-md-12">
+              <!-- result -->
+            <div id="q2-result"></div>
+          </div>
+          </div>
+      </div>
+
+
+<!-- Question 3 Start -->
+    <div role="tabpanel" class="tab-pane" id="q3">
+        <div class="row">
+          <div class="col-md-12">
+          <pre>
+          Question 3:
+
+var start = parseInt(prompt("How long would you like the side to be?"));
+         if (isNaN(start)) {
+                alert("That's not a number, please retry.");
+                var start = prompt("Please re-enter a number.");
+         }
+     var str = " " + "<br>";
+
+                for (var i=1; i<=start; i++){
+
+
+                for(var j=1; j<=8; j++){
+
+                   if((i+j)%2==0){
+                       document.write("#");
+                   }
+                    else{
+                        document.write(" ");
+                        }
+                }
+
+
+
+     document.write(str);
+                }
+          </pre>
+          </div>
+          <div class="col-md-12">
+              <!-- button -->
+            <button id="q3-button" class="btn btn-default" type="button">Q3 Answer</button>
+          </div>
+          <div class="col-md-12">
+              <!-- result -->
+            <div id="q3-result"></div>
+          </div>
+          </div>
+      </div>
+
+
+      <!--Question 4 Start -->
+    <div role="tabpanel" class="tab-pane" id="q4">
+        <div class="row">
+          <div class="col-md-12">
+          <pre>
+           Question 4:
+
+countBs = "BBC";
+document.write('BBC', "<br><br>");
+document.write('B count is', ':', " ", countBs.replace(/[^B]/g, "").length);
+          </pre>
+
+          </div>
+          <div class="col-md-12">
+              <!-- button -->
+            <button id="q4-button" class="btn btn-default" type="button">Q4 Answer</button>
+          </div>
+          <div class="col-md-12">
+              <!-- result -->
+            <div id="q4-result"></div>
+          </div>
+          </div>
+  </div>
+
+
+<!--Question 5 Start -->
+    <div role="tabpanel" class="tab-pane" id="q5">
+        <div class="row">
+          <div class="col-md-12">
+
+              <pre>
+          Question 5 code:
+countChar = "kakkerlak";
+document.write('kakkerlak', "<br><br>");
+document.write('k count is',':' , " ", countChar.replace(/[^k]/g, "").length);
+          </pre>
+
+          </div>
+          <div class="col-md-12">
+              <!-- button -->
+            <button id="q5-button" class="btn btn-default" type="button">Q5 Answer</button>
+          </div>
+          <div class="col-md-12">
+              <!-- result -->
+            <div id="q5-result"></div>
+          </div>
+          </div>
+  </div>
+
+
+      <!--Question 6 Start -->
+    <div role="tabpanel" class="tab-pane" id="q6">
+        <div class="row">
+          <div class="col-md-12">
+          <pre>
+          Question 6 code
+          </pre>
+          </div>
+          <div class="col-md-12">
+              <!-- button -->
+            <button id="q6-button" class="btn btn-default" type="button">Q6 TBA</button>
+          </div>
+          <div class="col-md-12">
+              <!-- result -->
+            <div id="q6-result"></div>
+          </div>
+          </div>
+  </div>
+
+
+       <!-- Question 7 Start -->
+    <div role="tabpanel" class="tab-pane" id="q7">
+      <div class="row">
+          <div class="col-md-12">
+          <pre>
+          Question 7 code
+          </pre>
+          </div>
+          <div class="col-md-12">
+              <!-- button -->
+            <button id="q7-button" class="btn btn-default" type="button">Q7 TBA</button>
+          </div>
+          <div class="col-md-12">
+              <!-- result -->
+            <div id="q7-result"></div>
+          </div>
+          </div>
+
+        </div>
+
+
+        <!-- Question 8 Start -->
+    <div role="tabpanel" class="tab-pane" id="q8">
+      <div class="row">
+          <div class="col-md-12">
+          <pre>
+          Question 8 code
+          </pre>
+          </div>
+          <div class="col-md-12">
+              <!-- button -->
+            <button id="q8-button" class="btn btn-default" type="button">Q8 TBA</button>
+          </div>
+          <div class="col-md-12">
+              <!-- result -->
+            <div id="q8-result"></div>
+          </div>
+          </div>
+
+        </div>
+
+
+  <!-- Question 9 Start -->
+    <div role="tabpanel" class="tab-pane" id="q9">
+        <div class="row">
+          <div class="col-md-12">
+          <pre>
+          Question 9 code
+          </pre>
+          </div>
+          <div class="col-md-12">
+              <!-- button -->
+            <button id="q9-button" class="btn btn-default" type="button">Q9 TBA</button>
+          </div>
+          <div class="col-md-12">
+              <!-- result -->
+            <div id="q9-result"></div>
+          </div>
+          </div>
+      </div>
+</div>
+
+
+
+        <script>
+            $(document).ready(function(){
+
+                //question 1
+                function getTriangle(){
+
+                var str = "";
+
+                for (var i=1; i<=6; i++){
+
+
+                for(var j=1; j<=i;j++){
+
+                    str = str + "#";
+                    }
+                    str = str + "</br>";
+                }
+
+
+
+
+            $("#q1-result").html(str);
+            }
+
+                 $("#q1-button").on("click", function(){
+                getTriangle();
+                    });
+
+                //question 2
+  function printFooBar(){
+      var print = "";
+      var number = Number (1);
+        for (var i = Number(1); i < 100; i++) {
+          // document.write( number + i + "<br>");
+
+        if (i%3==0 && i%5==0){
+                print = print + "FooBar" + "<br>";
+                  }
+
+        else if (i%3==0){
+                print = print + "Foo" + "<br>";
+                }
+
+
+
+        else if (i%5==0){
+            print = print + "Bar" + "<br>";
+            }
+
+        else{
+            print = print + i + "<br>";
+            }
+        }
+
+       $("#q2-result").html(print);
+    }
+       $("#q2-button").on("click", function(){
+                printFooBar();
+       });
+            //question 3
+                function start(){
+            var start = parseInt(prompt("How long would you like the side to be?"));
+         if (isNaN(start)) {
+                alert("That's not a number, please retry.");
+                var start = prompt("Please re-enter a number.");
+         }
+     var str = " " + "<br>";
+
+                for (var i=1; i<=start; i++){
+
+
+                for(var j=1; j<=8; j++){
+
+                   if((i+j)%2==0){
+                       document.write("#");
+                   }
+                    else{
+                        document.write(" ");
+                        }
+                }
+
+
+
+     document.write(str);
+                }
+
+
+                $("#q3-result").html(start);
+            }
+
+
+            $("#q3-button").on("click", function(){
+            start();
+            });
+
+            $("#q4-button").on("click", function(){
+            $("#q4-result").html("answer four!");
+            });
+
+            $("#q5-button").on("click", function(){
+            $("#q5-result").html("answer five!");
+            });
+
+            $("#q6-button").on("click", function(){
+            $("#q6-result").html("answer six!");
+            });
+
+            $("#q7-button").on("click", function(){
+            $("#q7-result").html("answer seven!");
+            });
+
+            $("#q8-button").on("click", function(){
+            $("#q8-result").html("answer eight!");
+            });
+
+            $("#q9-button").on("click", function(){
+            $("#q9-result").html("answer nine!");
+            });
+
+        //ends document ready function
+            });
+
+
+        </script>
+
+   </div>
+</body>
+
+
+</html>

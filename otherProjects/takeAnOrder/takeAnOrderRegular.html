@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Take An Order Regular</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- link to custom favicon -->
+    <link rel="icon" href="../../images/favicon.ico" />
+
+    <link rel="stylesheet" href="css/takeAnOrder.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="banner">
+            <!-- Website header with a textural image as background -->
+            <h1 class="header">Gamezone: Love, Live, Game.</h1>
+            
+        </header>
+        <div id="placeAnOrder">
+            <h2>Checkout</h2>
+            <!-- placeholder used when user clicks on the text field/box and the previous text goes away -->
+            <!--hide-name class shows an * when the user forgets/doesn't enter in text (this will display after the alert) 
+            Also helps the user find which field they didn't fill in -->
+            <input id="mySingleLineText" type="text" placeholder="enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'enter your name'"><span class="hide-name">*</span>
+            <br>
+            <br>
+
+            <!-- placeholder text is used when the user clicks on the text field the prior text disappears -->
+            <!--hide-address class shows an * when the user forgets to enter in text (this will display after the alert) and helps the user find which field they forgot/didn't fill in -->
+            <textarea id="myTextArea" rows="10" cols="50" placeholder="enter your delivery address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'enter your delivery address'"></textarea><span class="hide-address">*</span>
+            <br>
+            <br>
+            <h2>Quantity of Items:</h2>
+            <select id="mySelect">
+                <option value="1" selected> 1 </option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">+ 10</option>
+
+            </select>
+            <br>
+
+            <div id="mySelectMessage"></div>
+            <br>
+            <br>
+            <h2>Practical Accessories:</h2>
+            <img src="images/controller.jpg">
+            <input type="radio" name="gender" value="PS4-Controller" checked> PS4 Controller
+            <br>
+            <br>
+            <img class="usb" src="images/USB.png">
+            <input type="radio" name="gender" value="USB-hub"> USB Multi-Hub
+            <br>
+            <br>
+            <img class="hdmi" src="images/HDMI.jpg">
+            <input type="radio" name="gender" value="HDMI"> HDMI Cable - $25
+            <br>
+            <br>
+
+            <h2>Leisure Accessories</h2>
+            <img class="remote" src="images/remote.jpg">
+            <input type="checkbox" name="vehicle" value="PS4-Remote-Control" checked>PS4 Remote Control
+            <br>
+            <br>
+            <img class="headphones" src="images/headphones.jpg">
+            <input type="checkbox" name="vehicle" value="PS4-Headphones">Official PS4 Headphones - $20
+            <br>
+            <br>
+            <img class="keyboard" src="images/keyboard.jpg">
+            <input type="checkbox" name="vehicle" value="Controller-Keyboard">PS4 Controller Keyboard
+            <br>
+            <br>
+
+            <!--chainButton is to be used when the user enters in the value + 10, the alert will instruct the user through the process of placing 2 different orders instead of one deviously big order -->
+            <button id="chainButton" type="button">Click for Multiple Orders</button>
+            <br>
+            <br>
+
+
+            <button id="myButton" type="button">Click to Order</button>
+            <br>
+            <br>
+
+
+            <!--ends placeAnOrder div-->
+        </div>
+        <img class="ps4" src="images/ps4.jpg" />
+        <p class="caption">System Price: $399.99 CAD</p>
+        <div id="log">
+            <p class="reciept">Order Confirmation:</p>
+        </div>
+
+
+        <!-- ends wrapper div -->
+    </div>
+    <script src="js/takeAnOrder.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Take An Order Bootstrap</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- link to custom favicon -->
+    <link rel="icon" href="../../images/favicon.ico" />
+
+    <link rel="stylesheet" href="css/takeAnOrder.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="row">
+            <div class="col-sm-12 banner">
+                <h1 class="header">Gamezone: Love, Live, Game.</h1>
+
+
+            </div>
+
+            <!-- ends row div -->
+        </div>
+        <p 
+
+        <hr>
+        <div class="row right">
+
+            <h2 class="titleFont">F.A.Q </h2>
+            <div class="media review-box">
+                <div class="media-body">
+                    <h4 class="media-heading">Is There a Warranty? <a><span class="label label-primary label-as-badge">Jim Johnson.</span></a><br></h4>
+                    <p>&quot;No, all sales are final and we are not responsible for lost or damaged items..&quot;</p>
+                    <hr>
+                    <h4 class="media-heading">Do you ship outside the Continental U.S? <a><span class="label label-primary label-as-badge">Karl Kush</span></a><br></h4>
+                    <p>&quot;Unfortunately not Karl.&quot;</p>
+                    <hr>
+                    <h4 class="media-heading">What kind of discounts do you offer? <a><span class="label label-primary label-as-badge"> Killa Mike</span></a><br></h4>
+                    <p>&quot;We offer a price match guarantee for all major competitors. If you find it cheaper, we'll match it.&quot;</p>
+                </div>
+
+                <!-- faq ends -->
+            </div>
+            <div class="col-sm-6">
+                <img class="ps4Bootstrap" src="images/ps4.jpg" />
+                <p class="caption">Base Price: $399.99 CAD</p>
+            </div>
+        </div>
+
+        <div class="row left rightBorder">
+            <div class="col-sm-6">
+                <div id="placeAnOrderBootStrap">
+                    <h2 class="titleFont">Checkout:</h2>
+
+
+                    <input id="mySingleLineText" class="form-control" type="text" placeholder="enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'enter your name'"><span class="hide-name">*</span>
+                    <br>
+                    <br>
+
+
+                    <textarea id="myTextArea" class="form-control" rows="10" cols="50" placeholder="enter your delivery address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'enter your delivery address'"></textarea><span class="hide-address">*</span>
+                    <br>
+                    <br>
+                    <h2>Quantity:</h2>
+
+                    <select class="form-control" id="mySelect">
+                        <option value="1" selected> 1 </option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">+ 10</option>
+
+                    </select>
+                    <br>
+
+                    <div id="mySelectMessage"></div>
+                    <br>
+                    <br>
+                    <h2>Practical Accesories:</h2>
+                    <div class="radio">
+                        <img src="images/controller.jpg">
+                        <input type="radio" name="gender" value="PS4-Controller" checked> PS4 Controller
+                        <br>
+                        <br>
+                        <img class="usb" src="images/USB.png">
+                        <input type="radio" name="gender" value="USB-hub"> USB Multi-Hub
+                        <br>
+                        <br>
+                        <img class="hdmi" src="images/HDMI.jpg">
+                        <input type="radio" name="gender" value="HDMI"> HDMI Cable - $25
+                        <br>
+                        <br>
+                        <!-- ends radio div -->
+                    </div>
+
+                    <h2>Leisure Accessories:</h2>
+
+                    <img class="remote" src="images/remote.jpg">
+                    <input type="checkbox" name="vehicle" value="PS4-Remote-Control" checked> PS4 Remote Control
+                    <br>
+                    <br>
+                    <img class="headphones" src="images/headphones.jpg">
+                    <input type="checkbox" name="vehicle" value="PS4-Headphones"> Official PS4 Headphones - $20
+                    <br>
+                    <br>
+                    <img class="keyboard" src="images/keyboard.jpg">
+                    <input type="checkbox" name="vehicle" value="Controller-Keyboard"> PS4 Controller Keyboard - $20
+                    <br>
+                    <br>
+
+
+                    <button id="chainButton" type="button" class="btn btn-default">Click For Multiple Orders</button>
+                    <br>
+                    <br>
+
+
+                    <button id="myButton" type="button" class="btn btn-default">Click to Order</button>
+                    <br>
+                    <br>
+
+
+                    <!--ends placeAnOrder div-->
+                </div>
+                <!-- col-sm-5 ends -->
+            </div>
+            <!--row div ends -->
+        </div>
+
+
+        <div class="col-sm-6 right dotBorder">
+            <div id="log">
+                <p class="recieptBootstrap">Order Confirmation:</p>
+            </div>
+        </div>
+
+
+
+
+        <!-- ends wrapper div -->
+    </div>
+    <script src="js/takeAnOrder.js"></script>
+</body>
+
+</html>

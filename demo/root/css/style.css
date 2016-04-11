@@ -1,0 +1,434 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+{margin: 0; padding: 0; outline: 0;}
+
+/* linking the other font files for compatibility */
+@font-face {
+    font-family: 'tall_filmsregular';
+    src: url('../fonts/tall_film-webfont.eot');
+    src: url('../fonts/tall_film-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tall_film-webfont.woff2') format('woff2'),
+         url('../fonts/tall_film-webfont.woff') format('woff'),
+         url('../fonts/tall_film-webfont.ttf') format('truetype'),
+         url('../fonts/tall_film-webfont.svg#tall_filmsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tall films expanded';
+    src: url('../fonts/tall_films_expanded-webfont.eot');
+    src: url('../fonts/tall_films_expanded-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tall_films_expanded-webfont.woff2') format('woff2'),
+         url('../fonts/tall_films_expanded-webfont.woff') format('woff'),
+         url('../fonts/tall_films_expanded-webfont.ttf') format('truetype'),
+         url('../fonts/tall_films_expanded-webfont.svg#tall_films_expandedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+	color: #e5e5e5;
+	font-size: 12px;
+    background:#bce1f1; 	
+}
+
+.title{
+    color:white;
+}
+
+/*LM icon image */
+.badge{
+    float: right; 
+    width: 364px;
+    height: 300px;
+    padding:5px; 
+    border: solid black 1px;
+}
+
+h1, h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin:0 0 15px 0;
+}
+
+h1 {
+	font-size: 36px;
+	letter-spacing: -1px;
+	line-height: 100%;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+p {
+	margin: 0 0 15px 0;
+    color: white;
+}
+
+a {
+	color: #3e3e3e;
+}
+
+/*description text of the three photography sections */
+.description{
+    width: 350px;
+    font-size:18px;
+    display: block;
+    float: left;
+    margin-top: 50px;
+    line-height: 1.5;
+    margin-left: 10px;
+    padding: 10px; 
+    text-align: left;
+    border: solid white 1px;
+}
+
+/* body text in the artistic inspiration section */
+.inspiration{
+    font-size:18px;
+    display: block;
+    line-height: 1.5;
+    padding: 10px;   
+}
+
+/* boxed border for the inspiration section */
+.box-inspiration{
+    border: solid white 1px;
+    margin-top: 50px;
+}
+
+.about-header{
+    color: #3e3e3e;   
+}
+
+/* body text in the about and contact section */
+.about{
+    color: #3e3e3e;
+    font-size:18px;
+    display: block;
+    line-height: 1.5;
+    padding: 10px; 
+}
+
+/* boxed border for the about and contact section */
+.box-about{
+    border: solid #3e3e3e 1px;
+}
+
+/* text for the contact infomation  */
+.contact{
+    color: #3e3e3e;
+    font-size:18px;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* body text for the quotes on the three photography sections */
+.quote{
+    font-family: 'tall films expanded';
+    clear: both;
+    display: block;
+    font-size: 28px;
+    text-align: center;
+    width: 95%;
+    margin-top; 40px;
+    line-height: 1.5;
+}
+
+/* image gallery plug-in starts */
+
+.fotorama{
+    border: white solid 1px;
+    width: 600px;
+    margin-bottom: 20px;
+    height: 400px;
+    float: right;
+    margin-top: 10px;
+}
+
+/* image gallery plug-in ends */
+
+
+.clear {
+	clear: both;
+}
+
+.wrap {
+	width: 100%;
+	max-width: 1600px;
+	min-width: 960px;
+	z-index: 10;
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+
+}
+
+.section {
+	width: 100%;
+	max-width: 1600px;
+	min-width: 960px;
+	z-index: 10;
+	position: relative;
+	margin: 0 auto;
+	padding: 0 0 20px 0;
+	height: 630px;
+}
+
+.inner {
+	width: 1100px;
+	margin: 0 auto;
+	position: relative;
+	min-height: 50px;
+	padding:30px 0;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+.inner:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.subMenu {
+	height: 50px;
+	z-index: 1000;
+	width: 100%;
+	background: #0977bc;
+}
+
+.subMenu .inner {
+	padding:0;
+	font-weight: 400;
+	margin: 0 auto;
+}
+
+
+.subNavBtn {
+	display: block;
+	height: 35px;
+	width: 10%;
+	float: left;
+	margin: 0px 0px 0 0;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 15px 2% 0 2%;
+	text-align: center;
+	color: #fff;
+}
+
+.subMenu a:hover {
+	background: #1783c7;
+}
+
+.active {
+	background: #25aae1;
+}
+
+.end {
+	margin: 0;
+}
+
+/* sections */
+.sTop {
+	min-height: 130px;
+	background:#fff;
+	color:#3d3d3d;
+	padding: 50px 0;
+	height: 300px;
+	
+}
+
+.s1 {
+    background:#184764;
+	color:#fff;
+	
+}
+
+.s2 {
+	background: #313131;
+}
+
+.s2 a {
+	color: #fff;
+}
+
+.s3 {
+	background: #1b83b3;
+}
+
+.s4 {
+	background: #5aa3c4;
+}
+
+
+.s5 {
+	background: #bce1f1;
+	color: #3d3d3d;
+}
+
+
+/* mobile layout starts */
+@media screen and ( max-width: 600px ){
+    
+    .section.sTop{
+    height:400px;
+    } 
+    
+    .head-title{
+    margin-top: 250px;
+    padding: 5px;
+    font-size: 24px;
+    text-align: center;
+    }
+    
+    .subtitle{
+    font-size: 24px;
+    text-align: center;
+    }
+    
+    /* LM icon image */
+    .badge{
+    margin-top: 20px;
+    align-content: center;
+    width: 171px;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-right: 110px;
+    }
+    
+    .wrap{
+	width: 100%;
+	max-width: none;
+	min-width: 0;
+	z-index: 10;
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+    }
+
+    .section{
+	width: 100%;
+	max-width: none;
+	min-width: 0;
+	z-index: 10;
+	position: relative;
+	margin: 0 auto;
+	padding: 0 0 20px 0;
+	height: 1000px;
+    }
+    
+    /* white border for mobile nav bar */
+    .home-street{
+    border-bottom: solid 1px white;
+    border-right: solid 1px white;
+    }
+    
+    .dreams-inspire{
+    border-right: solid 1px white;
+    }
+    
+    .nature{
+    border-bottom: solid 1px white;
+    }
+    
+    .about{
+    border-right: solid 1px #1783c7;
+    }
+    
+    .subNavBtn{
+    display: block;
+    background: #1783c7;
+    height: 35px;
+    width: 29.08%;
+    float: left;
+    margin: 0px 0px 0 0;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 2% 0 2%;
+    text-align: center;
+    line-height: 110%;
+    }
+    
+    .subMenu{
+    background: #1783c7;
+    }
+    
+    .active {
+    background: #25aae1;
+    }
+    
+    .subMenu a:hover{
+    background: #5aa3c4;
+    }
+    
+    .subMenu a{
+    display: table-cell;
+    }
+    
+    .inner{
+    display: table;
+    border-style:hidden;
+    border-collapse: collapse;
+    }
+    
+    .inner{
+	width: 480px;
+    width:100%;
+	align-content: left;
+	position: relative;
+	min-height: 50px;
+	padding:0px 0;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+    }
+    
+    /* image gallery */
+    .fotorama{
+    border: none;
+    width: 380px;
+    height: 325px;
+    margin-right: 12px;
+    }
+    
+    img{
+    display: inline-block;
+    }
+
+    h1{
+    align-content: left;
+    margin-top: 20px;
+    margin-right:10px;
+    margin-left: 10px;
+    }
+    
+    .jungle{
+    margin-top: 50px;
+    }
+    
+    /* border for inspiration and about sections*/
+    .box-inspiration, .box-about{
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+    
+    h2{
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+    
+/* END OF CSS */   
+}
+
+
+
+

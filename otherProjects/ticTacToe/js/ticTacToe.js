@@ -1,117 +1,126 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
-  var circleOrEx = "o"; // Determines who goes first
-  var isGameInProgress = true; // loads game, makes it playable
-  var winningCombos = { // Tic tac toe has a total of 9 squares, in this case each square has an array of 0-8. This determines all the possible winning combinations from every square on the board./
-    0: [ //0 is key
-      [1, 2], //this multiDimensional Array is values
-      [3, 6],
-      [4, 8]
+    var circleOrEx = "o"; // who gets first turn, right now circle goes first
+    var isGameInProgress = true; // when the document loads, the tictactoe board is an active game
+    var winningCombos = { // the game board is a series of nine square boxes, but since this is an array, the values for earch box is 0 to 8.  these values outline the winning combinations starting from each possible square on the board.  the board is writen out like this:
+
+        // 0 | 1 | 2  
+        // ---------  
+        // 3 | 4 | 5
+        // ---------
+        // 6 | 7 | 8
+
+        0: [ //0 is key (winning combinations starting from the top left square)
+      [1, 2], //if the user enters in three of the same values across the top three squares, they win
+      [3, 6], //if the user enters in three of the same values down the far left column, they win
+      [4, 8] //if the user enters in three of the same values  diagonally from the top left to bottom                       right, they win
     ],
-    1: [
-      [0, 2],
-      [4, 7]
+        1: [ //(winning combinations starting from the top middle square)
+      [0, 2], //if the user enters in three of the same values across the top three squares, they win
+      [4, 7] //if the user enters in three of the same values down the middle column, they win
+
+    ], //there are no diagonal winning combinations for values 1, 3, 5, 7 
+
+        2: [ //(winning combinations starting from the top right square)
+      [0, 1], //if the user enters in three of the same values across the top three squares, they win
+      [5, 8], //if the user enters in three of the same values down the far right column, they win
+      [4, 6] //if the user enters in three of the same values  diagonally from the top right to bottom                       left, they win
     ],
-    2: [
-      [0, 1],
-      [5, 8],
-      [4, 6]
+        3: [ //(winning combinations starting at the middle square on the far left column )
+      [0, 6], //if the user enters in three of the same values down the far left column, they win
+      [4, 5] //if the user enters in three of the same values across the middle row, they win
     ],
-    3: [
-      [0, 6],
-      [4, 5]
+        4: [ //(winning combinations starting at the center square)
+      [1, 8], //BUG IN THE CODE, this should not be a winning combination
+      [2, 6], //if the user enters in three of the same values  diagonally from the top right to bottom                       left, they win
+      [1, 7], //if the user enters in three of the same values down the middle column, they win
+      [3, 5] // if the user enters in three of the same values across the middle row, they win
     ],
-    4: [
-      [1, 8],
-      [2, 6],
-      [1, 7],
-      [3, 5]
+        5: [ //(winning combinations starting from the middle square in the far right column)
+      [2, 8], //if the user enters in three of the same values down the far right column, they win
+      [3, 4] // if the user enters in three of the same values across the middle row, they win
     ],
-    5: [
-      [2, 8],
-      [3, 4]
+        6: [ //(winning combinations starting from the bottom left square)
+      [0, 3], //if the user enters in three of the same values down the far left column, they win
+      [2, 4], //if the user enters in three of the same values  diagonally from the top left to bottom                       right, they win
+      [7, 8] //if the user enters in three of the same values across the bottom three squares, they win
     ],
-    6: [
-      [0, 3],
-      [2, 4],
-      [7, 8]
+        7: [ //(winning combinations starting from the bottom middle square)
+      [1, 4], //if the user enters in three of the same values down the middle column, they win
+      [6, 8] //if the user enters in three of the same values across the bottom three squares, they win
     ],
-    7: [
-      [1, 4],
-      [6, 8]
-    ],
-    8: [
-      [0, 4],
-      [2, 5],
-      [6, 7]
+        8: [ //(winning combinations starting from the bottom right square)
+      [0, 4], //if the user enters in three of the same values  diagonally from the bottom right to the top               left, they win
+      [2, 5], //if the user enters in three of the same values down the far right column, they win
+      [6, 7] //if the user enters in three of the same values across the bottom three squares, they win
     ]
-  };
+    };
 
-  // once the gameboard is clicked the click function runs, thus the game is activated
-  $("#board").find("div").on("click", function() {
+    // when the user clicks on the board, the function runs, and the game is in progress
+    $("#board").find("div").on("click", function () {
 
-    if (isGameInProgress && $(this).hasClass("empty")) { /// removes the blank space in the box and replaces it with the X or O value.
-      $(this).removeClass("empty").append("<span class='" + circleOrEx + "'>" + circleOrEx + "</span");
+        if (isGameInProgress && $(this).hasClass("empty")) { /// within the #board remove the empty class and add either an X or an O value to the square when it is is clicked
+            $(this).removeClass("empty").append("<span class='" + circleOrEx + "'>" + circleOrEx + "</span"); //allows user to input X or O value in the square
 
-      checkIfWon($(this).index(), circleOrEx); //determines winner versus loser, loser goes first next time.
+            checkIfWon($(this).index(), circleOrEx); //function determines the turn cycle of the game 
 
-      if (circleOrEx === "o") { //when O plays
-        circleOrEx = "x";       //then X goes
-      } else {                  //when X plays
-        circleOrEx = "o";       //then O goes
-      }
-    }
+            if (circleOrEx === "o") { // if O has played their turn, run code on line 68
+                circleOrEx = "x"; // now it is X's turn
+            } else {
+                circleOrEx = "o"; // X has played their turn, now it is circle's turn
+            }
+        }
 
-  });
+    });
 
-  // when the new game button is clicked, the function runs
-  $("#newGame").on("click", function() {
+    // once you click the button with the 'newGame' id, run the function
+    $("#newGame").on("click", function () {
 
-    var boardSquares = $("#board").find("div"); //what is this variable
-    var firstEmptyMemorySquare = $(".container").find(".nine").filter(function() { //bonus Explain what filter does
-      return $.trim($(this).text()) === "" && $(this).children().length === 0;
-    }).not("#board").first();
+        var boardSquares = $("#board").find("div"); //boardSquares now becomes every div element within #board, which is each of the nine blank squares that make up the tic tac toe game
+        var firstEmptyMemorySquare = $(".container").find(".nine").filter(function () { //returns a value for firstEmptyMemorySquare if the function passes these requirements place the #board within the class nine that is in the containter. (once the game clicking the refresh button, place the previous board in an empty section of the page)
+            return $.trim($(this).text()) === "" && $(this).children().length === 0;
+        }).not("#board").first();
 
-    if (firstEmptyMemorySquare.length == 1) { //what is this if statement doing?
-      firstEmptyMemorySquare.html($("#board").html());
-    } else {
-      $(".container").find(".nine").not("#board").empty();
-      $(".container").find(".nine").first().html($("#board").html());
-    }
+        if (firstEmptyMemorySquare.length == 1) { //placing a previously played game in an EmptyMemorySquare
+            firstEmptyMemorySquare.html($("#board").html());
+        } else {
+            $(".container").find(".nine").not("#board").empty();
+            $(".container").find(".nine").first().html($("#board").html());
+        }
 
-    //Explain this each function
-    boardSquares.each(function() {
-      $(this).addClass("empty").empty();
+        //deletes anything in the empty class to games that are in progress, which allows user to enter X's or O's in the boardSquares
+        boardSquares.each(function () {
+            $(this).addClass("empty").empty();
+        })
+        isGameInProgress = true;
     })
-    isGameInProgress = true;
-  })
 
-  //Explain this funciton, describe the parameters; what are the possible values of the paramaters
-  function checkIfWon(chosenSquare) {
+    //checks if a player won. chosenSquare is the final value in a winning combination; the possible values for the  chosenSquare parameter is [0] - [8] 
+    function checkIfWon(chosenSquare) {
 
-    var mulitArr = winningCombos[chosenSquare];
-    var playerWon;
+        var mulitArr = winningCombos[chosenSquare];
+        var playerWon;
 
-    for (var i = 0; i < mulitArr.length; i++) { //Explain this nested for loop
-      playerWon = true;
-      for (var j = 0; j < mulitArr[i].length; j++) {
-        if (!$("#board").find("div").eq(mulitArr[i][j]).find("span").hasClass(circleOrEx)) { //Explain this condition
-          playerWon = false;
+        for (var i = 0; i < mulitArr.length; i++) { //the nested loop provides the length of the multidimensional array
+            playerWon = true;
+            for (var j = 0; j < mulitArr[i].length; j++) { //value of j starts at zero so the user must enter three values within a winning combination.  If j initially starts at 1 user only needs to match two of the same values within a winning combination.  If j => 2 the user only needs to match one value of a winning combination (which would be any square on the board) 
+                if (!$("#board").find("div").eq(mulitArr[i][j]).find("span").hasClass(circleOrEx)) { //Explain this condition
+                    playerWon = false;
+                }
+            }
+
+            if (playerWon) { //remaining lines affect the board when a player enters a winning combination
+
+                for (var j = 0; j < mulitArr[i].length; j++) {
+                    $("#board").find("div").eq(mulitArr[i][j]).find("." + circleOrEx).addClass("green"); //makes the first two inputs of the winning comination the color green
+                }
+                $("#board").find("div").eq(chosenSquare).find("." + circleOrEx).addClass("green"); //makes the last         input of the winning combination (chosenSquare) the color green
+                alert("Winner is " + circleOrEx.toUpperCase() + "!"); //alert "Winner is X" or "Winner is O"
+                isGameInProgress = false; //since a player has won, the game is no longer in progress
+                return false; //this exits the loop
+            }
         }
-      }
 
-      if (playerWon) { //Explain the condition and every line in the block
 
-        for (var j = 0; j < mulitArr[i].length; j++) {
-          $("#board").find("div").eq(mulitArr[i][j]).find("." + circleOrEx).addClass("green"); //Explain this condition
-        }
-        $("#board").find("div").eq(chosenSquare).find("." + circleOrEx).addClass("green");
-        alert("Winner is " + circleOrEx.toUpperCase() + "!");
-        isGameInProgress = false;
-        return false; //this exits the loop
-      }
     }
-
-
-  }
 })

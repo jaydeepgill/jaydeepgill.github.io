@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dice Awards</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        .movieImage{
+        width: 100%;
+        }
+        /*hover effect removed because I couldn't get the images to link to an external webpage (a site that has movie information such as movieDB/IMDB/RT) */
+        /*
+        .movieImage:hover {
+	   background-position: 0 0;
+        opacity: 0.4;
+
+        } */
+        .jtron-bg{
+           background-color: #d9edf7;
+            margin-top: 20px;
+        }
+
+    </style>
+
+    <!-- link to custom favicon -->
+    <link rel="icon" href="http://jaydeep101.github.io/images/Jay.ico"/>
+</head>
+<body>
+<div class="container">
+
+    <div class="jumbotron jtron-bg hidden-xs">
+            <h1>D.I.C.E Games of the year 2008-2015</h1>
+            <p>Did you agree with the critical consensus?, let us know below!</p>
+            <!-- Jumbotron ends -->
+        </div>
+
+    <div id="movieData" class="row">
+          </div>
+    <br><br>
+<button id="compare" class="btn btn-success" type="button">Compare Results</button>
+
+<br><br>
+
+
+
+
+
+
+<!-- container div ends -->
+</div>
+<script src="js/games.js"></script>
+<script src="http://jaydeep101.github.io/js/getNav.js"></script>
+</body>
+</html>

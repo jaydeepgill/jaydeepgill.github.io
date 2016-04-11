@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <title>Week Five jsQuestions</title>
+    <!-- link to custom favicon -->
+    <link rel="icon" href="../../../images/Jay.ico" />
+</head>
+
+<body>
+    <div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#q1" aria-controls="q1" role="tab" data-toggle="tab">Q1</a></li>
+            <li role="presentation"><a href="#q2" aria-controls="q2" role="tab" data-toggle="tab">Q2</a></li>
+            <li role="presentation"><a href="#q3" aria-controls="q3" role="tab" data-toggle="tab">Q3</a></li>
+            <li role="presentation"><a href="#q4" aria-controls="q4" role="tab" data-toggle="tab">Q4</a></li>
+            <li role="presentation"><a href="#q5" aria-controls="q5" role="tab" data-toggle="tab">Q5</a></li>
+            <li role="presentation"><a href="#q6" aria-controls="q6" role="tab" data-toggle="tab">Q6</a></li>
+            <li role="presentation"><a href="#q7" aria-controls="q7" role="tab" data-toggle="tab">Q7</a></li>
+            <li role="presentation"><a href="#q8" aria-controls="q8" role="tab" data-toggle="tab">Q8</a></li>
+            <li role="presentation"><a href="#q9" aria-controls="q9" role="tab" data-toggle="tab">Q9</a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <!-- Question 1 Start -->
+            <div role="tabpanel" class="tab-pane active" id="q1">
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre>
+            Question 1:
+                function getTriangle(){
+
+                var str = "";
+
+                for (var i=1; i<=6; i++){
+
+
+                for(var j=1; j<=i;j++){
+
+                    str = str + "#";
+                    }
+                    str = str + "<br>";
+                    }
+
+
+                $("#q1-result").html(str);
+                }
+
+                 $("#q1-button").on("click", function(){
+                    getTriangle();
+
+                    });
+
+          </pre>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- button -->
+                        <button id="q1-button" class="btn btn-default" type="button">Question One Solution</button>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- result -->
+                        <div id="q1-result"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 2 Start -->
+            <div role="tabpanel" class="tab-pane" id="q2">
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre>
+          Question 2 code
+
+  function printFooBar(){
+      var print = "";
+      var number = Number (1);
+        for (var i = Number(1); i < 100; i++) {
+          // document.write( number + i + "<br>");
+
+        if (i%3==0 && i%5==0){
+                print = print + "FooBar" + "<br>";
+                  }
+
+        else if (i%3==0){
+                print = print + "Foo" + "<br>";
+                }
+
+
+
+        else if (i%5==0){
+            print = print + "Bar" + "<br>";
+            }
+
+        else{
+            print = print + i + "<br>";
+            }
+        }
+          </pre>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- button -->
+                        <button id="q2-button" class="btn btn-default" type="button">Question Two Solution</button>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- result -->
+                        <div id="q2-result"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 3 Start -->
+            <div role="tabpanel" class="tab-pane" id="q3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre>
+          Question 3 code:
+
+ function chessBoard() {
+        var size = prompt("How long would you like the side to be?");
+              if (isNaN(size)) {
+                alert("That's not a number, please retry.");
+                var size = prompt("Please re-enter a number.");
+         }
+        var line = '';
+        var print = "";
+        var i = 1;
+
+        for (j = 1; j <= 4; j++) {
+          line = print + line + '# ';
+        }
+
+        for (i = 1; i <= size; i++) {
+          if ((i+j) % 2 === 0) {
+            print = print + (' ' + line) + "<br/>";
+          } else {
+            print = print + (line) + "<br/>";
+          }
+        }
+        $("#q3-result").html(print);
+      }
+
+
+      $("#q3-button").on("click", function() {
+
+        chessBoard();
+      });
+          </pre>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- button -->
+                        <button id="q3-button" class="btn btn-default" type="button">Question Three Solution</button>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- result -->
+                        <div id="q3-result"></div>
+                    </div>
+                </div>
+            </div>
+            <!--Question 4 Start -->
+            <div role="tabpanel" class="tab-pane" id="q4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre>
+           Question 4 Code:
+countBs = "BBC";
+document.write('BBC', "<br><br>");
+document.write('B count is', ':', " ", countBs.replace(/[^B]/g, "").length);
+          </pre>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- button -->
+                        <button id="q4-button" class="btn btn-default" type="button">Question Four Solution</button>
+                    </div>
+                    <div class="col-md-12">
+                        <br>
+                        <p>BBC</p>
+                        <p id="bbc"></p>
+                        <!-- result -->
+                        <div id="q4-result"></div>
+                    </div>
+                </div>
+            </div>
+            <!--Question 5 Start -->
+            <div role="tabpanel" class="tab-pane" id="q5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre>
+          Question 5 code:
+countChar = "kakkerlak";
+document.write('kakkerlak', "<br><br>");
+document.write('k count is',':' , " ", countChar.replace(/[^k]/g, "").length);
+          </pre>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- button -->
+                        <button id="q5-button" class="btn btn-default" type="button">Question Five Solution</button>
+                    </div>
+                    <div class="col-md-12">
+                        <br>
+                        <p>kakkerlak</p>
+                        <p id="kak"></p>
+                        <!-- result -->
+                        <div id="q5-result"></div>
+                    </div>
+                </div>
+            </div>
+            <!--Question 6 Start -->
+            <div role="tabpanel" class="tab-pane" id="q6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre>
+          Question 6 code:
+           var lowLimit = 0;
+                var upLimit = 0;
+
+                function range(lowLimit, upLimit) {
+                    var lowLimit = parseInt(prompt("What number would you like to begin with?"));
+                    if (isNaN(lowLimit)) {
+                        alert("That's not a number, please retry.");
+                        var lowLimit = prompt("Please re-enter a number.");
+                    }
+                    var upLimit = parseInt(prompt("What number would you like to end with?"));
+                    if (isNaN(upLimit)) {
+                        alert("That's not a number, please retry.");
+                        var upLimit = prompt("Please re-enter a number.");
+                    }
+
+
+
+                    var arr = [];
+
+
+
+                    if (lowLimit <= upLimit) {
+
+
+                        for (lowLimit; lowLimit <= upLimit; lowLimit++) {
+                            // console.log("start: " + start);
+                            arr.push(lowLimit);
+
+
+
+                        }
+
+                    } else {
+                        //if user unders lowerLimit > upperLimit that would cause an infinite loop
+                        alert("You broke the browser :(");
+                        return "Undefined";
+                    }
+                    return arr;
+
+                    //ends range function
+                }
+
+          </pre>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- button -->
+                        <button id="q6-button" class="btn btn-default" type="button">Question Six Solution</button>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- result -->
+                        <div id="q6-result"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 7 Start -->
+            <div role="tabpanel" class="tab-pane" id="q7">
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre>
+          Question 7 code:
+            function rangeSum(lowerLimit, upperLimit) {
+                    var lowerLimit = parseInt(prompt("What number would you like to begin with?"));
+                    if (isNaN(lowerLimit)) {
+                        alert("That's not a number, please retry.");
+                        var lowerLimit = prompt("Please re-enter a number.");
+                    }
+                    var upperLimit = parseInt(prompt("What number would you like to end with?"));
+                    if (isNaN(upperLimit)) {
+                        alert("That's not a number, please retry.");
+                        var upperLimit = prompt("Please re-enter a number.");
+                    }
+
+
+                    var sum = lowerLimit;
+                    for (i = 1; i <= (upperLimit - lowerLimit); i++) {
+                        sum += (lowerLimit + i);
+                    }
+          </pre>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- button -->
+                        <button id="q7-button" class="btn btn-default" type="button">Question Seven Solution</button>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- result -->
+                        <div id="q7-result"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 8 Start -->
+            <div role="tabpanel" class="tab-pane" id="q8">
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre>
+          Question 8 code:
+           function reverseArray(alpha, bravo, charlie, delta) {
+
+                    var alpha = prompt("Enter your first character or number to be in your array?");
+
+                    var bravo = prompt("Enter your second character or number to be in your array?");
+
+                    var charlie = prompt("Enter your third character or number to be in your array?");
+
+                    var delta = prompt("Enter your fourth character or number to be in your array?");
+
+
+                    var arr = [alpha, bravo, charlie, delta];
+
+                    var iarr = new Array(delta, charlie, bravo, alpha);
+          </pre>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- button -->
+                        <button id="q8-button" class="btn btn-default" type="button">Question Eight Solution</button>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- result -->
+                        <div id="q8-result"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 9 Start -->
+            <div role="tabpanel" class="tab-pane" id="q9">
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre>
+          Question 9 code:
+            function swapArray(valueA, valueB, valueC, valueD) {
+
+                    var valueA = prompt("Enter your first character or number to be in your array?");
+
+                    var valueB = prompt("Enter your second character or number to be in your array?");
+
+                    var valueC = prompt("Enter your third character or number to be in your array?");
+
+                    var valueD = prompt("Enter your fourth character or number to be in your array?");
+
+                    var valueE = prompt("Enter your fifth character or number to be in your array?")
+
+
+                    var arr = [valueA, valueB, valueC, valueD, valueE];
+
+                    var temp; //variable to store a given value
+                    temp = arr[0]; // store valueA in temp variable
+                    arr[0] = arr[4]; // valueA takes the value of valueE
+                    arr[4] = temp; //valueE takes the value of temp, which is the stored value of valueA
+
+                    //valueA and valueE have been swapped
+
+                    temp = valueB; //valueB is stored in temp variable
+                    valueB = valueD; //valueB takes the value of valueD
+                    valueD = temp; //valueD takes the new value of temp, which is the stored value of valueB
+
+                    //valueB and valueD have been swapped
+
+                    //since this is an odd number of variables in the array valueC is not swapped with anything
+
+                    //iarr reprints an array with the swapped values
+                    var iarr = new Array(valueA, valueB, valueC, valueD, valueE);
+          </pre>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- button -->
+                        <button id="q9-button" class="btn btn-default" type="button">Question Nine Solution</button>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- result -->
+                        <div id="q9-result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+
+                //question 1
+                function getTriangle() {
+
+                    var str = "";
+
+                    for (var i = 1; i <= 6; i++) {
+
+
+                        for (var j = 1; j <= i; j++) {
+
+                            str = str + "#";
+                        }
+                        str = str + "</br>";
+                    }
+
+
+
+
+                    $("#q1-result").html(str);
+                }
+
+                $("#q1-button").on("click", function () {
+                    getTriangle();
+                });
+
+                //question 2
+                function printFooBar() {
+                    var print = "";
+                    var number = Number(1);
+                    for (var i = Number(1); i < 100; i++) {
+                        // document.write( number + i + "<br>");
+
+                        if (i % 3 == 0 && i % 5 == 0) {
+                            print = print + "FooBar" + "<br>";
+                        } else if (i % 3 == 0) {
+                            print = print + "Foo" + "<br>";
+                        } else if (i % 5 == 0) {
+                            print = print + "Bar" + "<br>";
+                        } else {
+                            print = print + i + "<br>";
+                        }
+                    }
+
+                    $("#q2-result").html(print);
+                }
+                $("#q2-button").on("click", function () {
+                    printFooBar();
+                });
+                //question 3
+                function chessBoard() {
+                    var size = prompt("How long would you like the side to be?");
+                    if (isNaN(size)) {
+                        alert("That's not a number, please retry.");
+                        var size = prompt("Please re-enter a number.");
+                    }
+                    var line = '';
+                    var print = "";
+                    var i = 1;
+
+                    for (j = 1; j <= 4; j++) {
+                        line = print + line + '# ';
+                    }
+
+                    for (i = 1; i <= size; i++) {
+                        if ((i + j) % 2 === 0) {
+                            print = print + (' ' + line) + "<br/>";
+                        } else {
+                            print = print + (line) + "<br/>";
+                        }
+                    }
+                    $("#q3-result").html(print);
+                }
+
+
+                $("#q3-button").on("click", function () {
+
+                    chessBoard();
+                });
+
+
+
+                //Question 4 Starts
+                var countBs = "BBC";
+                var numUpper = countBs.length - countBs.replace(/[B]/g, '').length;
+
+
+                $("#q4-button").on("click", function () {
+                    $("#q4-result").html("B count is:" + " " + numUpper);
+                });
+
+                //Question 5 Starts
+                var countK = "kakkerlak";
+
+                var numLower = countK.replace(/[^k]/g, '').length;
+
+
+                $("#q5-button").on("click", function () {
+                    $("#q5-result").html("k count is:" + " " + numLower);
+                });
+
+                //Question 6 Starts
+                var lowLimit = 0;
+                var upLimit = 0;
+
+                function range(lowLimit, upLimit) {
+                    var lowLimit = parseInt(prompt("What number would you like to begin with?"));
+                    if (isNaN(lowLimit)) {
+                        alert("That's not a number, please retry.");
+                        var lowLimit = prompt("Please re-enter a number.");
+                    }
+                    var upLimit = parseInt(prompt("What number would you like to end with?"));
+                    if (isNaN(upLimit)) {
+                        alert("That's not a number, please retry.");
+                        var upLimit = prompt("Please re-enter a number.");
+                    }
+
+
+
+                    var arr = [];
+                    //arr.push(upperLimit);
+                    // push adds to an array
+                    // e.g. arr.push(1);
+
+
+                    if (lowLimit <= upLimit) {
+
+
+                        for (lowLimit; lowLimit <= upLimit; lowLimit++) {
+                            // console.log("start: " + start);
+                            arr.push(lowLimit);
+
+
+
+                        }
+
+                    } else {
+                        //if user unders lowerLimit > upperLimit that would cause an infinite loop
+                        alert("You broke the browser :(");
+                        return "Undefined";
+                    }
+                    return arr;
+
+                    //ends range function
+                }
+
+                $("#q6-button").on("click", function () {
+
+
+                    var rangeAnswer = range(lowLimit, upLimit);
+                    //if statement writes answer as undefined when user enters an invalid array
+                    if (rangeAnswer == "Undefined") {
+
+                        $("#q6-result").html("Answer is: " + rangeAnswer);
+
+                    } else {
+                        $("#q6-result").html("Answer is: " + rangeAnswer);
+                    }
+                    //ends click function
+                });
+
+                //Question 7 STARTS
+                function rangeSum(lowerLimit, upperLimit) {
+                    var lowerLimit = parseInt(prompt("What number would you like to begin with?"));
+                    if (isNaN(lowerLimit)) {
+                        alert("That's not a number, please retry.");
+                        var lowerLimit = prompt("Please re-enter a number.");
+                    }
+                    var upperLimit = parseInt(prompt("What number would you like to end with?"));
+                    if (isNaN(upperLimit)) {
+                        alert("That's not a number, please retry.");
+                        var upperLimit = prompt("Please re-enter a number.");
+                    }
+
+
+                    var sum = lowerLimit;
+                    for (i = 1; i <= (upperLimit - lowerLimit); i++) {
+                        sum += (lowerLimit + i);
+                    }
+
+
+
+
+
+
+                    $("#q7-result").html("Answer is: " + sum);
+                    //ends function
+                }
+
+                $("#q7-button").on("click", function () {
+                    rangeSum();
+
+
+
+                    $("#q7-result").html("Answer is: " + sum);
+
+                    //ends click function
+                });
+
+
+                $("#q7-button").on("click", function () {
+                    $("#q7-result").html("answer seven!");
+                });
+
+                //Question 8 Starts
+
+                function reverseArray(alpha, bravo, charlie, delta) {
+
+                    var alpha = prompt("Enter your first character or number to be in your array?");
+
+                    var bravo = prompt("Enter your second character or number to be in your array?");
+
+                    var charlie = prompt("Enter your third character or number to be in your array?");
+
+                    var delta = prompt("Enter your fourth character or number to be in your array?");
+
+
+                    var arr = [alpha, bravo, charlie, delta];
+
+                    var iarr = new Array(delta, charlie, bravo, alpha);
+
+
+                    $("#q8-result").html("Original array: " + arr + "<br>" + "Reversed array: " + iarr);
+
+
+
+
+                }
+                //ends reverseArray function
+
+
+                $("#q8-button").on("click", function () {
+                    reverseArray();
+
+
+                    //ends click function
+                });
+
+
+
+                //Question 9 Starts
+                function swapArray(valueA, valueB, valueC, valueD) {
+
+                    var valueA = prompt("Enter your first character or number to be in your array?");
+
+                    var valueB = prompt("Enter your second character or number to be in your array?");
+
+                    var valueC = prompt("Enter your third character or number to be in your array?");
+
+                    var valueD = prompt("Enter your fourth character or number to be in your array?");
+
+                    var valueE = prompt("Enter your fifth character or number to be in your array?")
+
+
+                    var arr = [valueA, valueB, valueC, valueD, valueE];
+
+                    var temp; //variable to store a given value
+                    temp = arr[0]; // store valueA in temp variable
+                    arr[0] = arr[4]; // valueA takes the value of valueE
+                    arr[4] = temp; //valueE takes the value of temp, which is the stored value of valueA
+
+                    //valueA and valueE have been swapped
+
+                    temp = valueB; //valueB is stored in temp variable
+                    valueB = valueD; //valueB takes the value of valueD
+                    valueD = temp; //valueD takes the new value of temp, which is the stored value of valueB
+
+                    //valueB and valueD have been swapped
+
+                    //since this is an odd number of variables in the array valueC is not swapped with anything
+
+                    //iarr reprints an array with the swapped values
+                    var iarr = new Array(valueA, valueB, valueC, valueD, valueE);
+
+
+                    $("#q9-result").html("Original array: " + arr + "<br>" + "Swapped array: " + iarr);
+
+
+
+
+                }
+                //ends reverseArray function
+
+
+                $("#q9-button").on("click", function () {
+                    swapArray();
+
+
+                    //ends click function
+                });
+
+                //ends document ready function
+            });
+        </script>
+    </div>
+</body>
+
+</html>

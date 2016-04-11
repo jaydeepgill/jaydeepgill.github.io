@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>W3: Multiplication Q4</title>
+</head>
+<body>
+<script>
+    
+    
+    //Brings in user inputs needed for calculations. Parses them to integers to work with later calculations
+    while (true) {
+    var start = parseInt(prompt("Which number would you like to see the timestable of?"));
+    console.log("Starting number is " + start);
+    
+            //Prompts user if they have entered an invalid number and breaks the code if user enters '-1'
+    
+            if (isNaN(start)) {
+                alert("That's not a number, please retry.");
+                var start = prompt("Please re-enter a number.");
+                if (start == -1) {
+                alert("You broke the code :(");
+                break;
+                }
+            } else if (start == -1) {
+                alert("You broke the code :(");
+                break;
+            }
+           
+        //var lowerLimit is the lower limit of the muliplication chart and where the calcualtions will begin and incrementally go up until the upperLimit is reached
+        //Prompts user if they have entered an invalid number and breaks the code if user enters '-1' 
+    
+    var lowerLimit = parseInt(prompt("Where in the times table would you like to begin?"));
+    console.log("Lower Limit is " + lowerLimit);
+         if (isNaN(lowerLimit)) {
+                alert("That's not a number, please retry.");
+                var lowerLimit = prompt("Please re-enter a number.");
+         }
+        if (lowerLimit == -1) {
+                alert("You broke the code :(");
+                break;
+                }
+        //var upperLimit is the end value of the multiplication chart 
+        //Prompts user if they have entered an invalid number and breaks the code if user enters '-1'
+    
+    var upperLimit = parseInt(prompt("Where in the times table would you like to end?"));
+    console.log("Upper Limit is " + upperLimit);
+        if (isNaN(upperLimit)) {
+                alert("That's not a number, please retry.");
+                var upperLimit = prompt("Please re-enter a number.");
+         }
+        if (upperLimit == -1) {
+                alert("You broke the code :(");
+                break;
+                }
+    
+    //starts function, passes variable start as parameter to function
+    timesTable(start);
+    
+    }
+   
+    function timesTable( number ) {
+        //loop through values
+        for (var i = lowerLimit; i <= upperLimit; i++) {
+            var result = number * i;
+            console.log(result);
+            //output values
+            document.write(result + '<br>' + '</hr>');
+        }
+        
+    }
+    
+     
+
+</script>
+
+
+
+</body>
+</html>

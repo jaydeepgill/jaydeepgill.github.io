@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>W3: Multiplication Q3</title>
+</head>
+<body>
+<script>
+    //Rather than the code having a set parameter, I worte the code so that the user sets the parameters and the calculations display the output
+    
+    //Brings in user inputs needed for calculations. Parses them to integers to work with later calculations
+    var start = parseInt(prompt("Which number would you like to see the timestable of?"));
+    console.log("Starting number is " + start);
+    
+     //var lowerLimit is the lower limit of the muliplication chart and where the calcualtions will begin and incrementally go up until the upperLimit is reached
+    
+    var lowerLimit = parseInt(prompt("Where in the times table would you like to begin?"));
+    console.log("Lower Limit is " + lowerLimit);
+    
+    
+     //var upperLimit is the end value of the multiplication chart
+    var upperLimit = parseInt(prompt("Where in the times table would you like to end?"));
+    console.log("Upper Limit is " + upperLimit);
+    
+    //start function
+    timesTable(start);
+    
+    
+    
+    function timesTable( number ) {
+        //loop through values
+        for (var i = lowerLimit; i <= upperLimit; i++) {
+            var result = number * i;
+            console.log(result);
+            //output values
+            document.write(result + '<br>');
+        }
+        
+    }
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,5 +1,6 @@
 body{
 background-image: url("../images/splash.jpg");
+background-size: 100% 100%;
 background-repeat: none;
 }
 .splashPage{
@@ -21,11 +22,11 @@ width: 45px;
 .musicButton{
 margin-left: 20px;
 }
-hr.style14 { 
-  border: 0; 
-  height: 1px; 
+hr.style14 {
+  border: 0;
+  height: 1px;
   background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 }
 h2{
 color: white;
@@ -77,6 +78,9 @@ color: white;
 
 .thumbContent{
 color: white;
+}
+.thumbnail{
+margin: 15px;
 }
 
 .thumbLabel{
@@ -190,3 +194,14 @@ width: 40%;
   color: #fff;
 }
 
+.purchase{
+margin-top: 40px;
+margin: 0 auto;
+width: 35%;
+}
+
+@media (max-width: 576px) {
+    .purchase{
+    width: 55%;
+    }
+}

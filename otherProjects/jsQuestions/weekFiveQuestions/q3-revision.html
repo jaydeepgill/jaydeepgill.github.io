@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <title>Q3 Display</title>
+   
+ 
+</head>
+
+<body>
+    <div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+   
+    <li role="presentation" class="active"><a href="#q3" aria-controls="q3" role="tab" data-toggle="tab">Q3</a></li>
+   
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+          
+
+<!-- Question 3 Start -->
+    <div role="tabpanel" class="tab-pane tab-pane active" id="q3">
+        <div class="row">
+          <div class="col-md-12">
+          <pre>
+          Question 3 code:
+              function chessBoard() {
+        var size = prompt("How long would you like the side to be?");
+              if (isNaN(size)) {
+                alert("That's not a number, please retry.");
+                var size = prompt("Please re-enter a number.");
+         }
+        var line = '';
+        var print = "";
+        var i = 1;
+
+        for (j = 1; j <= 4; j++) {
+          line = print + line + '# ';
+        }
+
+        for (i = 1; i <= size; i++) {
+          if ((i+j) % 2 === 0) { 
+            print = print + (' ' + line) + "<br/>";
+          } else {
+            print = print + (line) + "<br/>";
+          }
+        }
+        $("#q3-result").html(print);
+      }
+
+
+      $("#q3-button").on("click", function() {
+
+        chessBoard();
+      });
+
+          </pre>
+          </div>
+          <div class="col-md-12">
+              <!-- button -->  
+            <button id="q3-button" class="btn btn-default" type="button">Question Three Solution</button>
+          </div>
+          <div class="col-md-12">
+              <!-- result --> 
+            <div id="q3-result"></div> 
+          </div>
+          </div>
+      </div>
+      
+  
+    
+        <script>
+            $(document).ready(function(){
+             
+                
+ 
+            //Question 3
+           function chessBoard() {
+        var size = prompt("How long would you like the side to be?");
+//added if the user enters a character that is not a number and re-prompts the user.
+              if (isNaN(size)) {
+                alert("That's not a number, please retry.");
+                var size = prompt("Please re-enter a number.");
+         }
+        var line = '';
+        var print = "";
+               //change i value to 1
+        var i = 1;
+        //start with j variable, j determines the number of # characters per line
+        for (j = 1; j <= 4; j++) {
+          line = print + line + '# ';
+        }
+            //the i value is the number of lines that will be printed out (until it equals the user input value)
+        for (i = 1; i <= size; i++) {
+          if ((i+j) % 2 === 0) { 
+            print = print + (' ' + line) + "<br/>";
+          } else {
+            print = print + (line) + "<br/>";
+          }
+        }
+//changed "#q3result" to '#q3-result'  
+        $("#q3-result").html(print);
+      }
+
+//changed "#q3button" to '#q3-button'
+      $("#q3-button").on("click", function() {
+
+        chessBoard();
+      });
+                
+           
+        //ends document ready function
+            });
+            
+            
+        </script>
+
+   </div>
+</body>
+
+
+</html>

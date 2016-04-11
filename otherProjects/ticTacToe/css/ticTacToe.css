@@ -26,6 +26,9 @@
 .green {
   color: green;
 }
+.red{
+color: red;
+}
 .allBorders {
   border: 1px black solid;
 }
@@ -38,4 +41,9 @@
 .borderLeftAndRight {
   border-left: 1px black solid;
   border-right: 1px black solid;
+}
+
+.indent{
+margin-left: 20px;
+margin-right: 20px;
 }

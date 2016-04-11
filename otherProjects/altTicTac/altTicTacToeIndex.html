@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alternated Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/altTicTacToe.css">
+     <!-- link to custom favicon -->
+    <link rel="icon" href="../../../images/favicon.ico" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="col-md-12 header">
+            <h1 class="banner">Previous Games</h1>
+
+            <h1 class="banner">Rules</h1>
+
+            <h1 class="banner-right">List of Wins</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4 nine hidden-xs"></div>
+            <!--previous game, red-->
+
+            <div class="col-md-4 hidden-xs">
+                <!--rules, green -->
+                <p>Classic Tic-Tac-Toe game.</br>
+                    </br> Match three X's or three O's in a line vertically, horizontally or diagonally to win! </br>
+                    </br> View an outline of all changes<a href="Improvements.rtf"> here </a></p>
+            </div>
+            <div class="col-md-4 hidden-xs">
+                <!-- List of wins, blue -->
+                <div class="win-chart">
+                    <p class="win-chart">X has won: </p>
+                    <p id="xWinCount" class="xWinCount win-chart"> 0 </p>
+                    <p class="win-chart">time(s)</p>
+                    </br>
+                    <p class="win-chart">O has won: </p>
+                    <p id="oWinCount" class="xWinCount win-chart"> 0 </p>
+                    <p class="win-chart">time(s)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 nine hidden-xs"></div>
+                <!-- previous game slot, red -->
+                <div class="col-md-4 nine" id="board">
+                    <div class="col-md-4 innerNine empty borderBottom col-xs-4"></div>
+                    <div class="col-md-4 innerNine empty borderBottom borderLeftAndRight col-xs-4"></div>
+                    <div class="col-md-4 innerNine empty borderBottom col-xs-4"></div>
+                    <div class="col-md-4 innerNine empty col-xs-4"></div>
+                    <div class="col-md-4 innerNine empty borderLeftAndRight col-xs-4"></div>
+                    <div class="col-md-4 innerNine empty col-xs-4"></div>
+                    <div class="col-md-4 innerNine empty borderTop col-xs-4"></div>
+                    <div class="col-md-4 innerNine empty borderTop borderLeftAndRight col-xs-4"></div>
+                    <div class="col-md-4 innerNine empty borderTop col-xs-4"></div>
+                </div>
+                <div class="col-md-4 hidden-xs"></div>
+                <!--blue not needed -->
+            </div>
+            <div class="row">
+                <div class="col-md-4 nine"></div>
+                <!-- previous game slot, red -->
+                <div class="col-md-4">
+                    <button id="newGame" class="btn btn-success btn-lg" type="button"><span class="glyphicon glyphicon-repeat"></span>Restart Game </button>
+                    <a href=" " button class="btn btn-primary btn-lg" type="button"><span class="glyphicon glyphicon-repeat"></span>Reset Scores</button></a>
+                </div>
+                <div class="col-md-4"> </div>
+                <!--blue not needed -->
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/altTicTacToe.js"></script>
+</body>
+
+</html>

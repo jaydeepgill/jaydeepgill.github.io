@@ -1,0 +1,192 @@
+body{
+background-image: url("../images/splash.jpg");
+background-repeat: none;
+}
+.splashPage{
+margin-top: 50px;
+}
+.logo{
+margin-top: 200px;
+margin-bottom: 50px;
+text-align: center;
+color: white;
+font-size: 72px;
+font-family: Arial;
+font-weight: bold;
+}
+.musicIcon{
+height: 45px;
+width: 45px;
+}
+.musicButton{
+margin-left: 20px;
+}
+hr.style14 { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+h2{
+color: white;
+margin-left: 10px;
+}
+.aboutSubHeading{
+color: white;
+margin-left: 30px;
+}
+
+p{
+font-size: 18px;
+line-height: 1.5x;
+}
+.missionText{
+text-align: center;
+margin-right: 30px;
+margin-left: 30px;
+background-color:rgba(0, 0, 0, 0.4);
+color: white;
+border: solid 1px white;
+padding: 10px;
+}
+.aboutInfo{
+margin-bottom: 30px;
+}
+.bodyText{
+margin-right: 30px;
+margin-left: 30px;
+background-color:rgba(0, 0, 0, 0.4);
+color: white;
+border: solid 1px white;
+padding: 10px;
+}
+.titleText{
+margin-left: 30px;
+color: white;
+}
+.headText{
+text-align: center;
+margin: 0 auto;
+color: white;
+}
+.thumbPreview{
+background: transparent;
+border: solid white 1px;
+color: white;
+}
+
+.thumbContent{
+color: white;
+}
+
+.thumbLabel{
+color: white;
+}
+li{
+margin-top: 10px
+}
+.nv{
+margin: 20px;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar .nav > li > a {
+    float: none;
+    line-height: 19px;
+    padding: 9px 10px 11px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color:  #fff;
+}
+.navbar .nav > li > a:hover {
+   color: #fff;
+}
+a:visited {
+color: #fff;
+}
+a:active{
+color: #fff;
+}
+/*Splash Page styling */
+.enter{
+margin-top: 40px;
+margin: 0 auto;
+width: 40%;
+}
+
+.exit{
+margin-top: 40px;
+margin: 0 auto;
+width: 40%;
+}
+.btn-success {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active {
+  background: #45c46f !important;
+  border-color: #45c46f !important;
+}
+.btn-success.btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
+  background: #58ca7e;
+  color: #fff;
+}
+
+.btn-danger {
+  background: #fff;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active {
+  background: #fa3641 !important;
+  border-color: #fa3641 !important;
+}
+.btn-danger.btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active {
+  background: #fb4f59;
+  color: #fff;
+}
+
+.btn-outline {
+  background: none;
+  border: 2px solid gray;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active {
+  box-shadow: none;
+}
+.btn-info {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btn-info:hover, .btn-info:focus, .btn-info:active {
+  background: #5bc0de !important;
+  border-color: #5bc0de !important;
+}
+.btn-info.btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btn-info.btn-outline:hover, .btn-info.btn-outline:focus, .btn-info.btn-outline:active {
+  background: #5bc0de;
+  color: #fff;
+}
+

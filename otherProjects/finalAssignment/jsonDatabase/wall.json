@@ -1,0 +1,202 @@
+{
+    "album": [
+    {
+    "albumImage": "",
+    "artist": "Bruce",
+    "year": "",
+    "genre": ""
+ },
+    
+ {
+     "albumImage": "",
+   "artist": "Tom Waits",
+    "year": "",
+    "genre": ""
+ },
+  
+ {
+     "albumImage": "",
+ "artist": "Alison Krauss",
+    "year": "",
+    "genre": ""
+ },
+  
+ {
+     "albumImage": "",
+ "artist": "Pink Floyd",
+    "year": "",
+    "genre": ""
+ },
+   
+ {
+     "albumImage": "",
+  "artist": "Rage Against the Machine",
+    "year": "",
+    "genre": ""
+ },
+    
+ {
+     "albumImage": "",
+ "artist": "",
+    "year": "",
+    "genre": ""
+ },
+    
+ {
+     "albumImage": "",
+ "artist": "",
+    "year": "",
+    "genre": ""
+ },
+    
+ {
+     "albumImage": "",
+  "artist": "",
+    "year": "",
+    "genre": ""
+     
+     },
+    
+ {
+ "artist": "",
+    "year": "",
+    "genre": ""
+ },
+  
+ {
+     "albumImage": "",
+"artist": "",
+    "year": "",
+    "genre": ""
+     },
+   
+ {
+     "albumImage": "",
+"artist": "",
+    "year": "",
+    "genre": ""
+ }, 
+    
+ {
+     "albumImage": "",
+   "artist": "",
+    "year": "",
+    "genre": ""
+ },
+   
+ {
+     "albumImage": "",
+ "artist": "",
+    "year": "",
+    "genre": ""
+ },
+   
+ {
+     "albumImage": "",
+ "artist": "",
+    "year": "",
+    "genre": ""
+ },
+    
+ {
+     "albumImage": "",
+  "artist": "",
+    "year": "",
+    "genre": ""
+     },
+ {
+     "albumImage": "",
+  "artist": "",
+    "year": "",
+    "genre": ""
+ }],
+    
+    "equipment": [
+    {
+    "deviceImage": "",
+    "device": "E12", 
+    "type": "Portable amp",
+    "company": "FiiO",
+    "price": "$130"
+ 
+ },
+     {
+  "deviceImage": "",
+     "device": "GS1000e",
+     "type": "Headphone", 
+    "company": "Grado",
+    "price": "$1300"
+     },
+    {
+     "deviceImage": "",
+     "device": "RS1i", 
+     "type": "Headphone", 
+    "company": "Grado",
+    "price": "$850"
+     },
+     {
+     "deviceImage": "",
+     "device": "SR60e", 
+     "type": "Headphone", 
+    "company": "Grado",
+    "price": "$80"
+     },
+     {
+     "deviceImage": "",
+     "device": "HD 650", 
+     "type": "Headphone", 
+    "company": "Sennheiser",
+    "price": "$500"
+     },  
+    {
+    "deviceImage": "",
+     "device": "SRH 860",
+     "type": "Headphones", 
+    "company": "Samson",
+    "price": "$60"
+     },
+    {
+    "deviceImage": "",
+     "device": "MA750i", 
+     "type": "In-ear monitors", 
+    "company": "RHA",
+    "price": "$130"
+     },
+    {
+   "deviceImage": "",
+     "device": "Play: 1", 
+     "type": "WiFi connected speaker", 
+    "company": "Sonos",
+    "price": "$229"
+     },
+    {
+   "deviceImage": "",
+     "device": "Walsh 3", 
+     "type": "Speakers (passive)", 
+    "company": "Ohm",
+    "price": "$2,000"
+     },
+     {
+    "deviceImage": "",
+     "device": "Evo 2/8", 
+     "type": "Speakers (passive)", 
+    "company": "Wharfedale",
+    "price": "$400"
+     },
+      {
+    "deviceImage": "",
+     "device": "Asgard 2", 
+     "type": "Amplifier", 
+    "company": "Schiit",
+    "price": "$299"
+},
+      {
+    "deviceImage": "",
+     "device": "Modi", 
+     "type": "DAC", 
+    "company": "Schiit",
+    "price": "$99"
+ 
+ }]
+
+}

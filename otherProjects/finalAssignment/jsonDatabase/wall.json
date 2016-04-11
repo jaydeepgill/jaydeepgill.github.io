@@ -3,64 +3,56 @@
 			"albumImage": "images/consoles/1.jpg",
 			"artist": "Super Nintendo",
 			"albumTitle": "Nintendo",
-			"year": "1990",
-			"genre": "Console"
+			"year": "1990"
 		},
 
 		{
 			"albumImage": "images/consoles/2.jpg",
 			"artist": "Sega Genesis",
 			"albumTitle": "Sega",
-			"year": "1989",
-			"genre": "Console"
+			"year": "1989"
 		},
 
 		{
 			"albumImage": "images/consoles/3.jpg",
 			"artist": "Nintendo 64",
 			"albumTitle": "Nintendo",
-			"year": "1996",
-			"genre": "console"
+			"year": "1996"
 		},
 
 		{
 			"albumImage": "images/consoles/4.jpg",
 			"artist": "Sega Dreamcast",
 			"albumTitle": "Sega",
-			"year": "1999",
-			"genre": "console"
+			"year": "1999"
 		},
 
 		{
 			"albumImage": "images/consoles/5.jpg",
 			"artist": "Playstation",
 			"albumTitle": "Sony",
-			"year": "1995",
-			"genre": "console"
+			"year": "1995"
 		},
 
 		{
 			"albumImage": "images/consoles/6.jpg",
 			"artist": "Playstation 2",
 			"albumTitle": "Sony",
-			"year": "2000",
-			"genre": "console"
+			"year": "2000"
 		},
 
 		{
 			"albumImage": "images/consoles/7.jpg",
 			"artist": "XBOX",
 			"albumTitle": "Microsoft",
-			"year": "2001",
-			"genre": "console"
+			"year": "2001"
 		},
 
 		{
 			"albumImage": "images/consoles/8.jpg",
 			"artist": "Gamecube",
 			"albumTitle": "Nintendo",
-			"year": "2001",
-			"genre": "console"
+			"year": "2001"
 
 		},
 
@@ -68,62 +60,54 @@
 			"albumImage": "images/consoles/9.jpg",
 			"artist": "XBOX 360",
 			"albumTitle": "Microsoft",
-			"year": "2005",
-			"genre": "console"
+			"year": "2005"
 		},
 
 		{
 			"albumImage": "images/consoles/10.jpg",
 			"artist": "Playstation 3",
 			"albumTitle": "Sony",
-			"year": "2006",
-			"genre": "console"
+			"year": "2006"
 		},
 
 		{
 			"albumImage": "images/consoles/11.jpg",
 			"artist": "Wii",
 			"albumTitle": "Nintendo",
-			"year": "2006",
-			"genre": "console"
+			"year": "2006"
 		},
 
 		{
 			"albumImage": "images/consoles/12.jpg",
 			"artist": "Playstation 4",
 			"albumTitle": "Sony",
-			"year": "2014",
-			"genre": "console"
+			"year": "2014"
 		},
 
 		{
 			"albumImage": "images/consoles/13.jpg",
 			"artist": "XBOX ONE",
 			"albumTitle": "Microsoft",
-			"year": "2013",
-			"genre": "console"
+			"year": "2013"
 		},
 
 		{
 			"albumImage": "images/consoles/14.jpg",
 			"artist": "Wii U",
 			"albumTitle": "Nintendo",
-			"year": "2012",
-			"genre": "console"
+			"year": "2012"
 		},
 
 		{
 			"albumImage": "images/consoles/15.jpg",
 			"artist": "NX",
 			"albumTitle": "Nintendo'",
-			"year": "2016?",
-			"genre": "Console/handheld?"
+			"year": "2016?"
 		}, {
 			"albumImage": "images/consoles/16.jpg",
 			"artist": "Playstation 5",
 			"albumTitle": "Sony",
-			"year": "???",
-			"genre": "console"
+			"year": "???"
 		}
 	],
 	"devices": [

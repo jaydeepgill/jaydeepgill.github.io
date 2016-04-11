@@ -1,8 +1,8 @@
 {
-	"albums": [{
+	"Consoles": [{
 			"albumImage": "images/consoles/1.jpg",
-			"artist": "Super Nintendo",
-			"albumTitle": "Nintendo",
+			"Name": "Super Nintendo",
+			"Company": "Nintendo",
 			"year": "1990"
 		},
 

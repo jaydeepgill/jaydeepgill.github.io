@@ -3,12 +3,12 @@ var x = document.getElementById("myAudio");
 
 function playAudio() {
     x.play();
-    alert("8-Bit Music Now Playing");
+    alert("8-Bit Lovin' in Progress");
 
 }
 
 function pauseAudio() {
     x.pause();
-    alert("Music is paused");
+    alert("Had Enough?...We get it.");
 
 }

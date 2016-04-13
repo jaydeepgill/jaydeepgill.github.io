@@ -6,7 +6,7 @@ $.getJSON("jsonDatabase/wall.json",function(data){
 
     var html = "";
     $.each(data.albums, function(index, item){
-//kept divs as albums even when changed idea to game consoles because i was alreday too far into the styling using these other terms
+
      html += '<div class="col-md-3 col-sm-12">'+
              '<img class="albumImage" src="' + item.albumImage + '"/>' + "<br>" +
              '<div class="albumArtist">' + "<strong>Name: </strong>" + item.artist + '</div>'+

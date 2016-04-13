@@ -113,38 +113,38 @@
 	"devices": [
 
 		{
-			"deviceImage": "images/devices/e12.jpg",
+			"deviceImage": "images/devices/1.jpg",
 			"device": "Gameboy",
 			"type": "Handheld",
 			"company": "Nintendo",
 			"price": "$200 CAD"
 
 		}, {
-			"deviceImage": "images/devices/gs1000e.jpg",
+			"deviceImage": "images/devices/2.jpg",
 			"device": "Gameboy Colour",
 			"type": "Handheld",
 			"company": "Nintendo",
 			"price": "$200 CAD"
 		}, {
-			"deviceImage": "images/devices/rs1i.jpg",
+			"deviceImage": "images/devices/4.jpg",
 			"device": "Gameboy Advanced",
 			"type": "Handheld",
 			"company": "Nintendo",
 			"price": "$200 CAD"
 		}, {
-			"deviceImage": "images/devices/sr60e.jpg",
+			"deviceImage": "images/devices/6.jpg",
 			"device": "Gameboy Advanced SP",
 			"type": "Handheld",
 			"company": "Nintendo",
 			"price": "$200 CAD"
 		}, {
-			"deviceImage": "images/devices/hd650.jpg",
+			"deviceImage": "images/devices/3.jpg",
 			"device": "DS",
 			"type": "Handheld",
 			"company": "Nintendo",
 			"price": "$200 CAD"
 		}, {
-			"deviceImage": "images/devices/samson.jpg",
+			"deviceImage": "images/devices/5.jpg",
 			"device": "3DS",
 			"type": "Handheld",
 			"company": "Nintendo",
